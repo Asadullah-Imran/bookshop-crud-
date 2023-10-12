@@ -1,28 +1,19 @@
 .app {
-  height: 100vh;
-  padding: 0px 100px;
+  width: 100vw;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
 }
-.books {
+/* .books {
   display: flex;
   gap: 3px;
-}
-.book {
+} */
+/* .book {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
-}
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  background-color: lightgreen;
-}
+} */
 
 .delete,
 .update {

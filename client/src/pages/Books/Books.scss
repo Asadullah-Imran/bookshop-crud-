@@ -1,0 +1,68 @@
+.books-container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  margin: 20px 20px 20px 20px;
+  margin-top: 50px !important;
+  margin-bottom: 10px !important;
+  padding: 10px 10px 10px 10px;
+  box-shadow: -1px 1px 46px -14px rgba(125, 125, 125, 0.97);
+  -webkit-box-shadow: -1px 1px 46px -14px rgba(125, 125, 125, 0.97);
+  -moz-box-shadow: -1px 1px 46px -14px rgba(125, 125, 125, 0.97);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column !important;
+  text-align: center !important;
+
+  .books {
+    // background: red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // Create 4 columns for books
+    gap: 15px;
+    padding: 0 10px 10px 10px;
+    margin: auto;
+
+    .book {
+      //   background: green;
+      height: 100%;
+      max-width: 380px;
+      box-shadow: -1px 1px 53px -38px rgba(92, 92, 92, 0.64);
+      -webkit-box-shadow: -1px 1px 53px -38px rgba(92, 92, 92, 0.64);
+      -moz-box-shadow: -1px 1px 53px -38px rgba(92, 92, 92, 0.64);
+      border-radius: 10px;
+
+      .img {
+        padding-top: 10px;
+        img {
+          width: 200px;
+          height: 300px;
+          object-fit: cover;
+          background-color: lightgreen;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h2 {
+      }
+      p {
+      }
+      .button {
+        padding-bottom: 10px;
+        button {
+          margin: 5px;
+          padding: 5px;
+          width: 200px;
+        }
+      }
+    }
+  }
+  .button {
+    button {
+      width: 300px;
+    }
+  }
+}

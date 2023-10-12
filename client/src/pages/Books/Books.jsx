@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./Books.css";
 const Books = () => {
   const [books, setBooks] = useState([]);
 
@@ -25,29 +26,36 @@ const Books = () => {
   };
 
   return (
-    <div>
+    <div className="books-container">
       <h1>Eagle book shop</h1>
       <div className="books">
         {books.map((book) => (
           <div className="book" key={book.id}>
-            {book.cover && <img src={book.cover} alt="" />}
+            <div className="img">
+              {book.cover && <img src={book.cover} alt="" />}
+            </div>
+
             <h2>{book.title}</h2>
             <p>{book.description}</p>
             <p>{book.price}</p>
-            <button className="delete" onClick={() => handleDelete(book.id)}>
-              Delete
-            </button>
-            <button className="update">
-              <Link className="update" to={`/update/${book.id}`}>
-                Update
-              </Link>
-            </button>
+            <div className="button">
+              <button className="delete" onClick={() => handleDelete(book.id)}>
+                Delete
+              </button>
+              <button className="update">
+                <Link className="update" to={`/update/${book.id}`}>
+                  Update
+                </Link>
+              </button>
+            </div>
           </div>
         ))}
       </div>
-      <button>
-        <Link to="/add">Add New Book</Link>
-      </button>
+      <div className="button">
+        <button>
+          <Link to="/add">Add New Book</Link>
+        </button>
+      </div>
     </div>
   );
 };
