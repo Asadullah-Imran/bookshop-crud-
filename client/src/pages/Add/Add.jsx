@@ -17,7 +17,7 @@ const Add = () => {
     e.preventDefault();
     navigate("/");
     try {
-      await axios.post("http://localhost:8080/books", book);
+      await axios.post("https://bookshopbackend.vercel.app/books", book);
     } catch (error) {
       console.log("error");
     }

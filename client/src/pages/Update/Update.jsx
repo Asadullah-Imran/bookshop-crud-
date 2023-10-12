@@ -19,7 +19,7 @@ const Update = () => {
     const fetchBookData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/books/${bookId}`
+          `https://bookshopbackend.vercel.app/books/${bookId}`
         );
         const existingBook = response.data;
 
@@ -43,7 +43,10 @@ const Update = () => {
     navigate("/");
     try {
       // Send a PUT request to update the book with the current book data
-      await axios.put(`http://localhost:8080/books/${bookId}`, book);
+      await axios.put(
+        `https://bookshopbackend.vercel.app/books/${bookId}`,
+        book
+      );
     } catch (error) {
       console.log(error);
     }
