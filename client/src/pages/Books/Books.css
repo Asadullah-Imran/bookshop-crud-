@@ -23,6 +23,16 @@
   padding: 0 10px 10px 10px;
   margin: auto;
 }
+@media screen and (max-width: 760px) {
+  .books-container .books {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 560px) {
+  .books-container .books {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .books-container .books .book {
   height: 100%;
   max-width: 380px;
