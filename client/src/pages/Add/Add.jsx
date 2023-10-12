@@ -16,6 +16,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     navigate("/");
+
     try {
       await axios.post("https://bookshopbackend.vercel.app/books", book);
     } catch (error) {
