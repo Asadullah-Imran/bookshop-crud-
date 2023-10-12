@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Add.css";
 const Add = () => {
   const [book, setBook] = useState({
     title: "",
@@ -24,7 +25,7 @@ const Add = () => {
     }
   };
   return (
-    <div className="form">
+    <div className="add-container">
       <h1>Add New Book</h1>
       <input
         type="text"
@@ -32,11 +33,11 @@ const Add = () => {
         onChange={handleChange}
         name="title"
       />
-      <input
-        type="text"
+      <textarea
         placeholder="description"
         onChange={handleChange}
         name="description"
+        style={{ minHeight: "70px" }}
       />
       <input
         type="number"
@@ -50,8 +51,11 @@ const Add = () => {
         onChange={handleChange}
         name="cover"
       />
-
-      <button onClick={handleClick}>Add</button>
+      <div className="buttonDiv">
+        <button className="formButton" onClick={handleClick}>
+          Add
+        </button>
+      </div>
     </div>
   );
 };

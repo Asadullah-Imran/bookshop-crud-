@@ -53,7 +53,7 @@ const Update = () => {
   };
 
   return (
-    <div className="form">
+    <div className="add-container">
       <h1>Update Book</h1>
       <input
         type="text"
@@ -62,8 +62,7 @@ const Update = () => {
         name="title"
         value={book.title} // Set the input value to the current book title
       />
-      <input
-        type="text"
+      <textarea
         placeholder="description"
         onChange={handleChange}
         name="description"
@@ -83,10 +82,11 @@ const Update = () => {
         name="cover"
         value={book.cover} // Set the input value to the current book cover
       />
-
-      <button className="formButton" onClick={handleClick}>
-        Update
-      </button>
+      <div className="buttonDiv">
+        <button className="formButton" onClick={handleClick}>
+          Update
+        </button>
+      </div>
     </div>
   );
 };
