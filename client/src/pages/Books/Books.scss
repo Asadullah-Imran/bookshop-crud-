@@ -64,6 +64,14 @@
           padding: 5px;
           width: 200px;
         }
+        .update:hover {
+          background: rgb(139, 139, 234);
+          border: none;
+          .updateLink {
+            color: white;
+            font-weight: 700;
+          }
+        }
       }
     }
   }

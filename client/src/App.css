@@ -33,9 +33,12 @@
   background: rgb(242, 100, 100);
   border: none;
 }
-.update:hover {
-  color: white;
-  font-weight: 700;
+/* .update:hover {
   background: rgb(139, 139, 234);
   border: none;
+
 }
+.updateLink:hover {
+  color: white;
+  font-weight: 700;
+} */

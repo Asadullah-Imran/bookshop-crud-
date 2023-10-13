@@ -62,6 +62,14 @@
   padding: 5px;
   width: 200px;
 }
+.books-container .books .book .button .update:hover {
+  background: rgb(139, 139, 234);
+  border: none;
+}
+.books-container .books .book .button .update:hover .updateLink {
+  color: white;
+  font-weight: 700;
+}
 .books-container .button {
   color: white;
 }
