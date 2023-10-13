@@ -37,7 +37,7 @@ const Books = () => {
 
             <h2>{book.title}</h2>
             <p>{book.description}</p>
-            <p>{book.price} BDT</p>
+            <p>{book.price}/- BDT</p>
             <div className="button">
               <button className="delete" onClick={() => handleDelete(book.id)}>
                 Delete
