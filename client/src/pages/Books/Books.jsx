@@ -37,7 +37,7 @@ const Books = () => {
 
             <h2>{book.title}</h2>
             <p>{book.description}</p>
-            <p>{book.price}</p>
+            <p>{book.price} BDT</p>
             <div className="button">
               <button className="delete" onClick={() => handleDelete(book.id)}>
                 Delete
@@ -52,8 +52,10 @@ const Books = () => {
         ))}
       </div>
       <div className="button">
-        <button>
-          <Link to="/add">Add New Book</Link>
+        <button className="formButton">
+          <Link to="/add" className="linkadd">
+            Add New Book
+          </Link>
         </button>
       </div>
     </div>

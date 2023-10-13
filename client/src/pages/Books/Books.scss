@@ -68,7 +68,15 @@
     }
   }
   .button {
-    button {
+    color: white;
+    .formButton {
+      background: lightgreen;
+
+      .linkadd {
+        color: white !important;
+        font-weight: 700;
+      }
+
       width: 300px;
     }
   }

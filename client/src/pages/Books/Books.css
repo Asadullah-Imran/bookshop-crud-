@@ -62,6 +62,14 @@
   padding: 5px;
   width: 200px;
 }
-.books-container .button button {
+.books-container .button {
+  color: white;
+}
+.books-container .button .formButton {
+  background: lightgreen;
   width: 300px;
+}
+.books-container .button .formButton .linkadd {
+  color: white !important;
+  font-weight: 700;
 }/*# sourceMappingURL=Books.css.map */
