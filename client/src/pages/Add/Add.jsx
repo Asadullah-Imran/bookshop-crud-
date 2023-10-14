@@ -47,7 +47,7 @@ const Add = () => {
       />
       <input
         type="text"
-        placeholder="cover"
+        placeholder="cover img link"
         onChange={handleChange}
         name="cover"
       />
