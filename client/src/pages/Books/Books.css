@@ -1,5 +1,5 @@
 .books-container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   height: 100%;
   background: #fafafa;
@@ -53,6 +53,10 @@
   -o-object-fit: cover;
      object-fit: cover;
   background-color: lightgreen;
+}
+.books-container .books .book h2,
+.books-container .books .book p {
+  padding: 0 15px 0 15px;
 }
 .books-container .books .book .button {
   padding-bottom: 10px;
